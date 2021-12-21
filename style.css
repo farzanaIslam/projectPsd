@@ -10,7 +10,7 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1300px;
   width: 96%;
 }
 img {
@@ -92,6 +92,7 @@ top header css
   list-style: none;
   margin-right: 0.5rem;
   position: relative;
+  padding-right: 0.5rem;
 }
 .mini_menu ul li::after {
   content: "";
@@ -113,6 +114,19 @@ top header css
 .mini_menu ul li a:hover {
   color: black;
 }
-.search_menu {
+.search_menu form {
+  padding: 5px 12px;
   flex: 1;
+  /* display: flex; */
+  text-align: right;
+  background: #fff;
+  border-radius: 2.5rem;
+}
+.search_menu input {
+  border: 0px;
+}
+.search_menu input[type="submit"] {
+  background: url(./image/search.png);
+  width: 18px;
+  background-repeat: no-repeat;
 }
