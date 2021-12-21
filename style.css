@@ -20,7 +20,7 @@ img {
 /* =============================
 top header css
 ================================== */
-.header_area {
+/* .header_area {
   width: 100%;
   clear: both;
 }
@@ -73,4 +73,46 @@ top header css
 .search_menu {
   width: 30%;
   float: right;
+} */
+#top_header_area {
+  background: #ba2e1f;
+}
+.innertop_header {
+  display: flex;
+  align-items: center;
+}
+
+.mini_menu {
+  flex: 2;
+}
+.mini_menu ul {
+  display: flex;
+}
+.mini_menu ul li {
+  list-style: none;
+  margin-right: 0.5rem;
+  position: relative;
+}
+.mini_menu ul li::after {
+  content: "";
+  margin-right: 0.5rem;
+  background: aliceblue;
+  width: 1px;
+  height: 10px;
+  top: 7px;
+  right: -12px;
+  position: absolute;
+}
+.mini_menu ul li:last-child::after {
+  display: none;
+}
+.mini_menu ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.mini_menu ul li a:hover {
+  color: black;
+}
+.search_menu {
+  flex: 1;
 }
